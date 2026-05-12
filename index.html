@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>password_lord</title>
+        <link rel = "stylesheet" href = {{url_for("static",filename = "style.css")}}
+    </head>
+    <body>
+        <div class = "box">
+            <h1>password generator</h1>
+            <form method = "post">
+            <input type = "number" name = "length" placeholder = "enter your password length">
+            <br><br>
+            <select name = "mode">
+                <option value = "easy">Easy</option>
+                <option value = "moderate">Moderate</option>
+                <option value = "hard">Hard</option>
+            </select>
+            <button type = "submit">Generate</button>
+            </form>
+        <h2>{{password}}</h2>
+    </body>
+</html>
